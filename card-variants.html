@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Варианты UI Карточек — DeeperSignals Code-Only Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="card-variants.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="variants-viewport">
+    
+    <!-- Top Header -->
+    <header class="variants-header">
+      <div class="badge-pill">
+        <i data-lucide="code-2"></i> 100% Настоящий код (HTML + CSS + SVG)
+      </div>
+      <h1>Варианты карточек в стиле Deeper Signals</h1>
+      <p>Никаких сгенерированных картинок для UI: живая вёрстка, векторные SVG-графики и гармоничные стили поверх закатного фона.</p>
+    </header>
+
+    <!-- Grid of 4 Distinct Card Styles -->
+    <div class="cards-showcase-grid">
+
+      <!-- ========================================================
+           ВАРИАНТ 1: Frosted Sunset Glass (Матовое стекло с градиентным бордером)
+           ======================================================== -->
+      <div class="variant-col">
+        <div class="variant-meta">
+          <span class="v-num">Вариант 1</span>
+          <h3>Frosted Sunset Glass</h3>
+          <p>Стекло, сквозь которое сияет фон, тончайший градиентный бордер, встроенный живой SVG график метрик.</p>
+        </div>
+
+        <article class="card-v1">
+          <div class="card-v1-top">
+            <span class="v1-number">01</span>
+            <div class="v1-pill">
+              <span class="pill-dot"></span>
+              <span>Выбор спикеров</span>
+            </div>
+          </div>
+
+          <div class="card-v1-title-group">
+            <div class="v1-brand-logo">Γ</div>
+            <div>
+              <h4 class="v1-title">Gamma App</h4>
+              <span class="v1-url">gamma.app</span>
+            </div>
+          </div>
+
+          <p class="v1-desc">
+            Генерирует «живые веб-документы». Слайды перестраиваются адаптивно под экран и включают интерактивные виджеты.
+          </p>
+
+          <!-- Real Code SVG Sparkline Chart -->
+          <div class="v1-chart-box">
+            <div class="chart-header">
+              <span class="chart-label">Скорость генерации колоды</span>
+              <span class="chart-value">22 сек <em>быстрее 94% AI</em></span>
+            </div>
+            <svg class="svg-sparkline" viewBox="0 0 300 60" fill="none">
+              <defs>
+                <linearGradient id="chartGrad1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#FF2A4D" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#FFA800" stop-opacity="0.0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0 45 C 50 40, 70 20, 120 28 C 170 36, 210 10, 260 14 L 300 8 L 300 60 L 0 60 Z" fill="url(#chartGrad1)" />
+              <path d="M0 45 C 50 40, 70 20, 120 28 C 170 36, 210 10, 260 14 L 300 8" stroke="#FF4A3F" stroke-width="2.5" stroke-linecap="round" />
+              <circle cx="300" cy="8" r="4" fill="#FFA800" stroke="#FFF" stroke-width="2" />
+            </svg>
+          </div>
+
+          <!-- Specs List -->
+          <div class="v1-specs">
+            <div class="spec-item">
+              <span class="s-name">Движок</span>
+              <span class="s-val">Claude 3.7 + GPT-4o</span>
+            </div>
+            <div class="spec-item">
+              <span class="s-name">Экспорт</span>
+              <span class="s-val">PPTX, PDF, Web</span>
+            </div>
+          </div>
+
+          <button class="v1-btn">
+            <span>Открыть платформу</span>
+            <i data-lucide="arrow-up-right"></i>
+          </button>
+        </article>
+      </div>
+
+      <!-- ========================================================
+           ВАРИАНТ 2: Floating Solid White (Чистая парящая плашка Dribbble)
+           ======================================================== -->
+      <div class="variant-col">
+        <div class="variant-meta">
+          <span class="v-num">Вариант 2</span>
+          <h3>Pure Floating Surface</h3>
+          <p>Кипельно-белая плашка с глубокой тёплой тенью, крупными цифрами метрик и премиальной типографикой.</p>
+        </div>
+
+        <article class="card-v2">
+          <div class="card-v2-top">
+            <span class="v2-tag-chip">Smart Grid</span>
+            <span class="v2-score">9.8 <span>/ 10</span></span>
+          </div>
+
+          <h4 class="v2-title">Gamma App</h4>
+          <span class="v2-sub">Интеллектуальная система вёрстки карточек</span>
+
+          <p class="v2-desc">
+            Автоматическое форматирование с балансировкой блоков по золотому сечению. Вставляйте текст — AI сам скомпонует слайд.
+          </p>
+
+          <!-- Real Code Metric Bento Tiles -->
+          <div class="v2-metrics-grid">
+            <div class="v2-metric-tile">
+              <span class="m-number">+225%</span>
+              <span class="m-caption">Вовлечённость зрителей</span>
+            </div>
+            <div class="v2-metric-tile">
+              <span class="m-number">100%</span>
+              <span class="m-caption">Векторный PPTX</span>
+            </div>
+          </div>
+
+          <div class="v2-footer">
+            <div class="v2-formats">
+              <span class="format-badge">PPTX</span>
+              <span class="format-badge">PDF</span>
+              <span class="format-badge">Live</span>
+            </div>
+            <button class="v2-btn-arrow">
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- ========================================================
+           ВАРИАНТ 3: Ultra-Minimal Editorial (Швейцарский эдиториал)
+           ======================================================== -->
+      <div class="variant-col">
+        <div class="variant-meta">
+          <span class="v-num">Вариант 3</span>
+          <h3>Editorial Monoline</h3>
+          <p>Максимальный воздух, тонкие 1px разделители, акцент на шрифте Space Grotesk и оранжевой линии прогресса.</p>
+        </div>
+
+        <article class="card-v3">
+          <div class="v3-header-row">
+            <div class="v3-step-indicator">
+              <span class="dot-active"></span>
+              <span>РЕЙТИНГ №1</span>
+            </div>
+            <span class="v3-engine-tag">GPT-4o + Claude</span>
+          </div>
+
+          <h4 class="v3-title">Gamma App</h4>
+
+          <div class="v3-progress-row">
+            <div class="v3-bar-wrap">
+              <div class="v3-bar-fill" style="width: 95%;"></div>
+            </div>
+            <span class="v3-score-label">Индекс качества: 98%</span>
+          </div>
+
+          <p class="v3-desc">
+            Слайды генерируются в веб-формате fluid cards без ограничений классического соотношения 16:9.
+          </p>
+
+          <ul class="v3-features-list">
+            <li><i data-lucide="check"></i> Экспорт в нативный векторный PowerPoint</li>
+            <li><i data-lucide="check"></i> Интерактивные 3D-модели и формы опросов</li>
+            <li><i data-lucide="check"></i> 400 бесплатных AI-кредитов на старте</li>
+          </ul>
+
+          <div class="v3-action-row">
+            <a href="#" class="v3-link">Перейти к обзору <i data-lucide="arrow-right"></i></a>
+            <span class="v3-price">Free / $8 мес</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- ========================================================
+           ВАРИАНТ 4: Dark Ink Surface (Контрастный графитовый чернильный)
+           ======================================================== -->
+      <div class="variant-col">
+        <div class="variant-meta">
+          <span class="v-num">Вариант 4</span>
+          <h3>Contrast Dark Ink</h3>
+          <p>Глубокий чернильный фон (#121417), за счет которого теплый градиент вокруг карточки вспыхивает ярким контрастом.</p>
+        </div>
+
+        <article class="card-v4">
+          <div class="v4-glow-border"></div>
+          
+          <div class="v4-inner">
+            <div class="v4-top">
+              <span class="v4-badge">PRO CHOICE</span>
+              <span class="v4-year">2026 EDITION</span>
+            </div>
+
+            <h4 class="v4-title">Gamma App</h4>
+            <span class="v4-sub">Next-Gen Presentation Engine</span>
+
+            <div class="v4-stats-bar">
+              <div class="v4-stat">
+                <span class="stat-big">22с</span>
+                <span class="stat-small">Генерация</span>
+              </div>
+              <div class="v4-stat-divider"></div>
+              <div class="v4-stat">
+                <span class="stat-big">4.9★</span>
+                <span class="stat-small">Оценка</span>
+              </div>
+              <div class="v4-stat-divider"></div>
+              <div class="v4-stat">
+                <span class="stat-big">PPTX</span>
+                <span class="stat-small">Вектор</span>
+              </div>
+            </div>
+
+            <p class="v4-desc">
+              Идеальный инструмент для презентации стартапов инвесторам. Поддерживает видео-вставки и живой трекинг кликов.
+            </p>
+
+            <button class="v4-btn">
+              <span>Сгенерировать тест</span>
+              <i data-lucide="sparkles"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <!-- Actions / Switcher -->
+    <div class="variants-footer-action">
+      <p>Какой из вариантов (1, 2, 3 или 4) вам нравится больше всего? Или мы можем скомбинировать их лучшие черты.</p>
+    </div>
+
+  </div>
+
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

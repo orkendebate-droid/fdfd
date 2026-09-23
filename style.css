@@ -1,0 +1,979 @@
+/* ==========================================================================
+   DEEPERSLIDES — 100% UNIFIED SUNSET GRADIENT CANVAS & FROSTED GLASS CARDS
+   Applying Variant 1 across all cards: Real code SVG sparklines, zero AI mockups!
+   ========================================================================== */
+
+:root {
+  /* Exact Deeper Signals Saturated Fluid Mesh Palette */
+  --coral-deep: #E60067;
+  --coral-mid: #FF2A4D;
+  --coral-orange: #FF641A;
+  --coral-amber: #FFA800;
+
+  /* Master Sunset Gradient Flow across the entire application */
+  --gradient-master-mesh: linear-gradient(135deg, #E60067 0%, #FF2A4D 20%, #FF641A 50%, #FFA800 85%, #E60067 100%);
+
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Space Grotesk', var(--font-family);
+
+  /* Radius & Shadows */
+  --radius-outer: 36px;
+  --radius-pill: 9999px;
+  --radius-card: 22px;
+  --shadow-dribbble: 0 35px 90px rgba(0, 0, 0, 0.16);
+  --shadow-pill: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+  background-color: #E2E5E9;
+  color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #E2E5E9;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Outer Dribbble Frame Container */
+.page-viewport-canvas {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* THE ENTIRE CARD IS THE RADIANT GRADIENT */
+.dribbble-showcase-frame {
+  background: var(--gradient-master-mesh);
+  border-radius: var(--radius-outer);
+  overflow: hidden;
+  box-shadow: var(--shadow-dribbble);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  position: relative;
+}
+
+/* --------------------------------------------------------------------------
+   1. Hero Canvas
+   -------------------------------------------------------------------------- */
+.hero-canvas {
+  position: relative;
+  background-image: url('full_hero_bg.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 40px 56px 60px;
+  color: #FFFFFF;
+  overflow: hidden;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.brand-poly {
+  width: 32px;
+  height: 32px;
+}
+
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-top {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.brand-bottom {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-white-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFFFFF;
+  color: #121417;
+  padding: 11px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-white-pill i {
+  width: 14px;
+  height: 14px;
+}
+
+.btn-white-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.nav-login {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-body {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 5;
+  flex: 1;
+}
+
+.hero-text-block {
+  max-width: 540px;
+}
+
+.hero-headline {
+  font-size: 58px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.hero-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 38px;
+  font-weight: 400;
+}
+
+.hero-action-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-hero-schedule {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  color: #121417;
+  padding: 15px 32px;
+  border-radius: var(--radius-pill);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow-pill);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-hero-schedule i {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-hero-schedule:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hero-badges-stage {
+  position: relative;
+  height: 380px;
+  width: 100%;
+}
+
+.context-pill {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  color: #121417;
+  padding: 11px 22px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-pill);
+  z-index: 10;
+  animation: float-pill 6s ease-in-out infinite alternate;
+}
+
+.context-pill i {
+  width: 16px;
+  height: 16px;
+}
+
+.pill-curious {
+  top: 18%;
+  right: 18%;
+  animation-delay: 0s;
+}
+
+.pill-icon-curious {
+  color: #FF5500;
+}
+
+.pill-disciplined {
+  top: 50%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.pill-icon-disciplined {
+  color: #E60067;
+}
+
+.pill-passionate {
+  bottom: 12%;
+  right: 10%;
+  animation-delay: 4s;
+}
+
+.pill-icon-passionate {
+  color: #FF2A4D;
+}
+
+@keyframes float-pill {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-8px); }
+}
+
+/* --------------------------------------------------------------------------
+   2. Floating Logos Strip (Frosted Glass over gradient)
+   -------------------------------------------------------------------------- */
+.trusted-floating-strip {
+  padding: 10px 56px 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.trusted-pill-container {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: var(--radius-pill);
+  padding: 18px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trusted-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -0.1px;
+}
+
+.trusted-logos {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.trust-brand {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.95;
+}
+
+.brand-goldengoose {
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.brand-generali {
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.brand-sp {
+  font-weight: 800;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   3. Content Section: Frosted Glass Cards (Variant 1)
+   -------------------------------------------------------------------------- */
+.gradient-content-section {
+  padding: 40px 56px 80px;
+  position: relative;
+  z-index: 5;
+}
+
+.sunset-sub-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.sunset-sub-badge i {
+  width: 14px;
+  height: 14px;
+}
+
+.directory-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.directory-meta h2 {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.directory-meta p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.directory-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dir-filter {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dir-filter:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(-1px);
+}
+
+.dir-filter.active {
+  background: #FFFFFF;
+  color: #121417;
+  border-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   VARIANT 1 FROSTED GLASS CARDS: 100% REAL CODE & LIVE SVG SPARKLINES
+   ========================================================================== */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+.tool-card-glass {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-card);
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #FFFFFF;
+}
+
+.tool-card-glass:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.24);
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.2);
+}
+
+.card-v1-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.v1-number {
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.v1-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #E11D48;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.pill-amber {
+  color: #CA8A04;
+}
+
+.pill-purple {
+  color: #7D2AE8;
+}
+
+.pill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #E11D48;
+}
+
+.dot-amber {
+  background: #CA8A04;
+}
+
+.dot-purple {
+  background: #7D2AE8;
+}
+
+.card-v1-title-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.v1-brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  color: #E11D48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.logo-beautiful {
+  color: #FFA800;
+}
+
+.logo-canva {
+  color: #00C4CC;
+}
+
+.logo-pitch {
+  color: #FF4757;
+}
+
+.v1-title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+
+.v1-url {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.v1-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 24px;
+}
+
+/* REAL CODE SVG SPARKLINE CHART CONTAINER */
+.v1-chart-box {
+  background: rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  padding: 14px 16px 8px;
+  margin-bottom: 24px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chart-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.chart-value {
+  font-size: 13px;
+  font-weight: 800;
+  color: #FFA800;
+}
+
+.chart-value em {
+  font-style: normal;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.svg-sparkline {
+  width: 100%;
+  height: 48px;
+  display: block;
+}
+
+/* Specs List */
+.v1-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  padding-top: 14px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.s-name {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.s-val {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.v1-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #FFFFFF;
+  color: #121417;
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.v1-btn i {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.2s;
+}
+
+.v1-btn:hover {
+  background: #121417;
+  color: #FFFFFF;
+}
+
+.v1-btn:hover i {
+  transform: translate(2px, -2px);
+}
+
+/* Benchmark Matrix inside Frosted Glass Wrap */
+.benchmark-inner-wrap {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 60px;
+}
+
+.matrix-heading {
+  margin-bottom: 30px;
+}
+
+.matrix-heading h2 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.matrix-heading p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.matrix-table-wrap {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-card);
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  color: #FFFFFF;
+}
+
+.editorial-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.editorial-table th {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 18px 24px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.editorial-table td {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.editorial-table tr:last-child td {
+  border-bottom: none;
+}
+
+.row-featured {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.col-name strong {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.pill-check {
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(16, 185, 129, 0.25);
+  color: #6EE7B7;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.pill-neutral {
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+/* --------------------------------------------------------------------------
+   4. Floating CTA Block (Pure on Gradient)
+   -------------------------------------------------------------------------- */
+.fluid-cta-section {
+  padding: 60px 56px 80px;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.cta-content-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.cta-floating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  color: #121417;
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-pill);
+}
+
+.cta-floating-badge i {
+  width: 15px;
+  height: 15px;
+  color: #FF5500;
+}
+
+.cta-headline {
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+.cta-subtext {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 36px;
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  color: #121417;
+  padding: 15px 32px;
+  border-radius: var(--radius-pill);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow-pill);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-cta-white i {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-cta-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 28px;
+  border-radius: var(--radius-pill);
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease;
+}
+
+.btn-cta-ghost:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   5. Clean Minimalist Footer
+   -------------------------------------------------------------------------- */
+.editorial-footer {
+  padding: 30px 56px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-logo {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-right {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Layout
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .hero-canvas {
+    padding: 30px 30px 60px;
+    background-position: center;
+  }
+
+  .hero-body {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text-block {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-action-row {
+    justify-content: center;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .trusted-logos {
+    gap: 24px;
+  }
+
+  .gradient-content-section, .trusted-floating-strip {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-headline {
+    font-size: 38px;
+  }
+
+  .cta-headline {
+    font-size: 30px;
+  }
+
+  .editorial-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

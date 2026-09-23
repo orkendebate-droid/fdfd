@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeeperSlides — Революция генерации презентаций</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Full Frame Rounded Card (Dribbble Showcase Style) -->
+  <main class="page-viewport-canvas">
+    <div class="dribbble-showcase-frame">
+
+      <!-- ==========================================
+           1. HERO SECTION (Continuous Canvas Layer)
+           ========================================== -->
+      <section class="hero-canvas">
+
+        <!-- Clean Minimalist Header -->
+        <header class="hero-header">
+          <a href="#" class="brand">
+            <svg class="brand-poly" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="12 2 2 8.5 4 19 12 22 20 19 22 8.5 12 2"></polygon>
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <line x1="2" y1="8.5" x2="22" y2="8.5"></line>
+            </svg>
+            <div class="brand-titles">
+              <span class="brand-top">DEEPER</span>
+              <span class="brand-bottom">SLIDES</span>
+            </div>
+          </a>
+
+          <nav class="nav-links">
+            <a href="#tools">Инструменты</a>
+            <a href="#cta">Тест-драйв</a>
+          </nav>
+
+          <div class="header-actions">
+            <a href="#tools" class="btn-white-pill">
+              <span>Сравнить AI</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="#tools" class="nav-login">Войти</a>
+          </div>
+        </header>
+
+        <!-- Hero Content Row -->
+        <div class="hero-body">
+          <div class="hero-text-block">
+            <h1 class="hero-headline">
+              Go Deeper with<br>
+              Generative Slides
+            </h1>
+            <p class="hero-paragraph">
+              Прорывные алгоритмы вёрстки и дизайн-агенты, которые трансформируют сухие тезисы в продающие колоды и раскрывают истинный потенциал спикера.
+            </p>
+            <div class="hero-action-row">
+              <a href="#tools" class="btn-hero-schedule">
+                <span>Исследовать платформы</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Badges Floating Over 3D Ribbon Art on Background -->
+          <div class="hero-badges-stage">
+            <div class="context-pill pill-curious">
+              <i data-lucide="sparkles" class="pill-icon-curious"></i>
+              <span>Gamma App</span>
+            </div>
+
+            <div class="context-pill pill-disciplined">
+              <i data-lucide="shield-check" class="pill-icon-disciplined"></i>
+              <span>Beautiful.ai</span>
+            </div>
+
+            <div class="context-pill pill-passionate">
+              <i data-lucide="activity" class="pill-icon-passionate"></i>
+              <span>Canva Magic</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           2. TRUSTED LOGOS STRIP (Glass Pill over gradient)
+           ========================================== -->
+      <section class="trusted-floating-strip">
+        <div class="trusted-pill-container">
+          <p class="trusted-label">Поддерживается мировыми форматами экспорта:</p>
+          <div class="trusted-logos">
+            <div class="trust-brand">Quint</div>
+            <div class="trust-brand brand-omega">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M4 19h4a7 7 0 1 1 8 0h4"></path>
+              </svg>
+              <span>Omega</span>
+            </div>
+            <div class="trust-brand brand-goldengoose">
+              <span>GOLDEN GOOSE</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="trust-brand brand-generali">GENERALI</div>
+            <div class="trust-brand brand-sp">S&P Global</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           3. TOOLS DIRECTORY (Frosted Sunset Glass Cards with Live SVG Charts)
+           ========================================== -->
+      <section id="tools" class="gradient-content-section">
+        
+        <div class="directory-header">
+          <div class="directory-meta">
+            <div class="sunset-sub-badge">
+              <i data-lucide="sparkles"></i> Рейтинг 2026
+            </div>
+            <h2>Ведущие платформы генерации</h2>
+            <p>Объективный обзор инструментов: архитектура, автономность верстки и экспорт.</p>
+          </div>
+          <div class="directory-filters">
+            <button class="dir-filter active" onclick="filterCategory('all', this)">Все решения</button>
+            <button class="dir-filter" onclick="filterCategory('pitch', this)">Стартап-деки</button>
+            <button class="dir-filter" onclick="filterCategory('analytics', this)">Отчеты & Таблицы</button>
+            <button class="dir-filter" onclick="filterCategory('creative', this)">Креатив</button>
+          </div>
+        </div>
+
+        <!-- Editorial Grid with Variant 1 (Frosted Glass + Live SVG Charts) -->
+        <div class="tools-grid">
+
+          <!-- Card 1: Gamma App -->
+          <article class="tool-card-glass" data-cat="pitch">
+            <div class="card-v1-top">
+              <span class="v1-number">01</span>
+              <div class="v1-pill">
+                <span class="pill-dot"></span>
+                <span>Выбор спикеров</span>
+              </div>
+            </div>
+
+            <div class="card-v1-title-group">
+              <div class="v1-brand-logo">Γ</div>
+              <div>
+                <h4 class="v1-title">Gamma App</h4>
+                <span class="v1-url">gamma.app</span>
+              </div>
+            </div>
+
+            <p class="v1-desc">
+              Принципиально новый формат «живых веб-документов». Слайды перестраиваются адаптивно под экраны, поддерживают интерактивные диаграммы и 3D-модели.
+            </p>
+
+            <!-- Real Code SVG Sparkline Chart -->
+            <div class="v1-chart-box">
+              <div class="chart-header">
+                <span class="chart-label">Скорость генерации колоды</span>
+                <span class="chart-value">22 сек <em>быстрее 94% AI</em></span>
+              </div>
+              <svg class="svg-sparkline" viewBox="0 0 300 60" fill="none">
+                <defs>
+                  <linearGradient id="chartGrad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FF2A4D" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#FFA800" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 45 C 50 40, 70 20, 120 28 C 170 36, 210 10, 260 14 L 300 8 L 300 60 L 0 60 Z" fill="url(#chartGrad1)" />
+                <path d="M0 45 C 50 40, 70 20, 120 28 C 170 36, 210 10, 260 14 L 300 8" stroke="#FF4A3F" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="300" cy="8" r="4" fill="#FFA800" stroke="#FFF" stroke-width="2" />
+              </svg>
+            </div>
+
+            <!-- Specs List -->
+            <div class="v1-specs">
+              <div class="spec-item">
+                <span class="s-name">Движок</span>
+                <span class="s-val">Claude 3.7 + GPT-4o</span>
+              </div>
+              <div class="spec-item">
+                <span class="s-name">Экспорт</span>
+                <span class="s-val">PPTX, PDF, Live Web</span>
+              </div>
+            </div>
+
+            <a href="https://gamma.app" target="_blank" class="v1-btn">
+              <span>Открыть Gamma</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 2: Beautiful.ai -->
+          <article class="tool-card-glass" data-cat="analytics pitch">
+            <div class="card-v1-top">
+              <span class="v1-number">02</span>
+              <div class="v1-pill pill-amber">
+                <span class="pill-dot dot-amber"></span>
+                <span>Smart Grid</span>
+              </div>
+            </div>
+
+            <div class="card-v1-title-group">
+              <div class="v1-brand-logo logo-beautiful">B</div>
+              <div>
+                <h4 class="v1-title">Beautiful.ai</h4>
+                <span class="v1-url">beautiful.ai</span>
+              </div>
+            </div>
+
+            <p class="v1-desc">
+              Технология Smart Slides с автоматическим выравниванием. Вы вводите данные — сетка, графики и текстовые блоки сами масштабируются по законам золотого сечения.
+            </p>
+
+            <!-- Real Code SVG Sparkline Chart -->
+            <div class="v1-chart-box">
+              <div class="chart-header">
+                <span class="chart-label">Точность авто-компоновки</span>
+                <span class="chart-value">30 сек <em>Smart Layout 98%</em></span>
+              </div>
+              <svg class="svg-sparkline" viewBox="0 0 300 60" fill="none">
+                <defs>
+                  <linearGradient id="chartGrad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FFA800" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#FF641A" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 50 C 40 45, 90 25, 140 30 C 190 35, 230 18, 270 12 L 300 6 L 300 60 L 0 60 Z" fill="url(#chartGrad2)" />
+                <path d="M0 50 C 40 45, 90 25, 140 30 C 190 35, 230 18, 270 12 L 300 6" stroke="#FFA800" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="300" cy="6" r="4" fill="#FFF" stroke="#FFA800" stroke-width="2" />
+              </svg>
+            </div>
+
+            <!-- Specs List -->
+            <div class="v1-specs">
+              <div class="spec-item">
+                <span class="s-name">Движок</span>
+                <span class="s-val">DesignerBot 2.0</span>
+              </div>
+              <div class="spec-item">
+                <span class="s-name">Экспорт</span>
+                <span class="s-val">Native PPTX, Slides</span>
+              </div>
+            </div>
+
+            <a href="https://beautiful.ai" target="_blank" class="v1-btn">
+              <span>Открыть Beautiful.ai</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 3: Canva Magic Studio -->
+          <article class="tool-card-glass" data-cat="creative">
+            <div class="card-v1-top">
+              <span class="v1-number">03</span>
+              <div class="v1-pill pill-purple">
+                <span class="pill-dot dot-purple"></span>
+                <span>Экосистема</span>
+              </div>
+            </div>
+
+            <div class="card-v1-title-group">
+              <div class="v1-brand-logo logo-canva">C</div>
+              <div>
+                <h4 class="v1-title">Canva Magic</h4>
+                <span class="v1-url">canva.com</span>
+              </div>
+            </div>
+
+            <p class="v1-desc">
+              Непревзойденная библиотека из миллионов визуальных ассетов, шаблонов и анимаций. Быстрое преобразование текстовых черновиков в презентации через Magic Design.
+            </p>
+
+            <!-- Real Code SVG Sparkline Chart -->
+            <div class="v1-chart-box">
+              <div class="chart-header">
+                <span class="chart-label">Объём дизайн-библиотеки</span>
+                <span class="chart-value">200k+ <em>ассетов & фото</em></span>
+              </div>
+              <svg class="svg-sparkline" viewBox="0 0 300 60" fill="none">
+                <defs>
+                  <linearGradient id="chartGrad3" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#E60067" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#FFA800" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 40 C 60 48, 100 20, 160 22 C 220 24, 250 15, 280 8 L 300 4 L 300 60 L 0 60 Z" fill="url(#chartGrad3)" />
+                <path d="M0 40 C 60 48, 100 20, 160 22 C 220 24, 250 15, 280 8 L 300 4" stroke="#E60067" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="300" cy="4" r="4" fill="#FFA800" stroke="#FFF" stroke-width="2" />
+              </svg>
+            </div>
+
+            <!-- Specs List -->
+            <div class="v1-specs">
+              <div class="spec-item">
+                <span class="s-name">Движок</span>
+                <span class="s-val">Magic Design Studio</span>
+              </div>
+              <div class="spec-item">
+                <span class="s-name">Экспорт</span>
+                <span class="s-val">PPTX, PDF, MP4 Video</span>
+              </div>
+            </div>
+
+            <a href="https://canva.com" target="_blank" class="v1-btn">
+              <span>Открыть Canva</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 4: Pitch.com -->
+          <article class="tool-card-glass" data-cat="pitch">
+            <div class="card-v1-top">
+              <span class="v1-number">04</span>
+              <div class="v1-pill">
+                <span class="pill-dot"></span>
+                <span>Стартап выбор</span>
+              </div>
+            </div>
+
+            <div class="card-v1-title-group">
+              <div class="v1-brand-logo logo-pitch">P</div>
+              <div>
+                <h4 class="v1-title">Pitch.com</h4>
+                <span class="v1-url">pitch.com</span>
+              </div>
+            </div>
+
+            <p class="v1-desc">
+              Идеален для привлечения инвестиций. Включает покадровую аналитику просмотров каждого слайда инвесторами и возможность записи видео-питча спикером.
+            </p>
+
+            <!-- Real Code SVG Sparkline Chart -->
+            <div class="v1-chart-box">
+              <div class="chart-header">
+                <span class="chart-label">Аналитика просмотров слайдов</span>
+                <span class="chart-value">Live <em>покадровый трекинг</em></span>
+              </div>
+              <svg class="svg-sparkline" viewBox="0 0 300 60" fill="none">
+                <defs>
+                  <linearGradient id="chartGrad4" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FF641A" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#E60067" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 48 C 50 35, 110 40, 160 18 C 210 22, 250 8, 280 12 L 300 6 L 300 60 L 0 60 Z" fill="url(#chartGrad4)" />
+                <path d="M0 48 C 50 35, 110 40, 160 18 C 210 22, 250 8, 280 12 L 300 6" stroke="#FF641A" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="300" cy="6" r="4" fill="#FFA800" stroke="#FFF" stroke-width="2" />
+              </svg>
+            </div>
+
+            <!-- Specs List -->
+            <div class="v1-specs">
+              <div class="spec-item">
+                <span class="s-name">Движок</span>
+                <span class="s-val">Pitch AI v3</span>
+              </div>
+              <div class="spec-item">
+                <span class="s-name">Экспорт</span>
+                <span class="s-val">Web Link, PDF</span>
+              </div>
+            </div>
+
+            <a href="https://pitch.com" target="_blank" class="v1-btn">
+              <span>Открыть Pitch</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ==========================================
+           4. FLOATING CTA BLOCK (Directly on Sunset Gradient)
+           ========================================== -->
+      <section id="cta" class="fluid-cta-section">
+        <div class="cta-content-wrapper">
+          <div class="cta-floating-badge">
+            <i data-lucide="zap"></i>
+            <span>Мгновенный старт за 20 секунд</span>
+          </div>
+          <h2 class="cta-headline">
+            Готовы создать презентацию,<br>
+            которую запомнят?
+          </h2>
+          <p class="cta-subtext">
+            Выберите Gamma для интерактивных питчдеков или Beautiful.ai для строгих отчетов и начните генерировать прямо сейчас.
+          </p>
+          <div class="cta-actions">
+            <a href="https://gamma.app" target="_blank" class="btn-cta-white">
+              <span>Открыть Gamma бесплатно</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="https://gamma.app" target="_blank" class="btn-cta-ghost">
+              <span>Смотреть демо</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Minimalist Clean Footer -->
+      <footer class="editorial-footer">
+        <div class="footer-left">
+          <span class="footer-logo">DEEPERSLIDES</span>
+          <span class="footer-copy">© 2026 Курируемый каталог генеративного дизайна. Без шаблонного шума.</span>
+        </div>
+        <div class="footer-right">
+          <a href="#tools">Платформы</a>
+          <a href="#cta">Тест-драйв</a>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+
+    function filterCategory(category, btn) {
+      document.querySelectorAll('.dir-filter').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.tool-card-glass');
+      cards.forEach(card => {
+        const cats = card.getAttribute('data-cat') || '';
+        if (category === 'all' || cats.includes(category)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
